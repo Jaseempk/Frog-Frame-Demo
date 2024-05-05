@@ -6,11 +6,8 @@ app.frame("/", (c) => {
   const { buttonValue, inputText, status } = c;
   const fruit = inputText || buttonValue;
   return c.res({
-    image: (
-      <div style={{ color: "white", display: "flex", fontSize: 60 }}>
-        {status === "initial" ? "Select your fruit!" : `Selected: ${fruit}`}
-      </div>
-    ),
+    image: "https://i.ytimg.com/vi/R3UACX5eULI/maxresdefault.jpg",
+
     intents: [
       <TextInput placeholder="Enter a custom fruit..." />,
       <Button value="apple">Apple</Button>,
